@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RADIO INTERNETOWE "SLONECZKO"</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script
+    src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <aside>
+    <img src="Untitled-1.png" class="marquee" alt="ruszajace sb element">
+
+    </aside>
+    <main>
+    <audio><source src="http://178.235.160.210:420" type="audio/mp3"></audio>
+    </main>
+    <div class="pojeb">
+    <img src="Untitled-2.png" id="kolorowe" alt="krecacy sb element"></div>
+    <div class="marqueedwa"><P><strong>POZDRO SZCZUR 2</strong></P><p>DZIŚ NA ANTENIE: LORELAI NEGRI & SPECJALNI GOSCIE <em>LIVE</em> 20:00</p><p><span id="play">▶</span> <span id="alarm"></span></p></div>
+<script>
+    var audioo = $('audio')[0];
+    $('#play').click(function() {
+        if (audioo.paused) {
+            audioo.play();
+            $('#play').html('⏸');
+        } else {
+            audioo.pause();
+            $('#play').html('▶');
+        };
+    });
+</script>
+</body>
+</html>

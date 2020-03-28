@@ -1,0 +1,77 @@
+body {
+    margin:0;
+    background-color: black;
+    background-image:url("alarmalfa.png");
+    background-size:100%;
+    font-family: 'Press Start 2P';
+	color:white;
+
+}
+
+main {
+    margin:0;
+    height:100vh:
+    width:80vw;
+    right:0;
+    position:fixed;
+    overflow:hidden;
+}
+
+
+
+aside {
+    width:20vw;
+    height:100vh;
+    overflow:hidden;
+}
+
+.marquee {
+    display:block;
+    opacity: 1;
+    width:100px;
+    text-orientation: vertical;
+    animation: pyk 20s infinite linear;
+}
+
+.marqueedwa {
+    position:fixed;
+    display:block;
+    top:30%;
+    left:10%;
+}
+
+@keyframes pyk {
+	0% { transform: translateY(-100%); }
+	100% { transform: translateY(50%); }
+}
+
+.pojeb {
+    position:fixed;
+    margin:auto;
+    top:0;
+    transform:translateY(-40vh);
+    left:20vh;
+}
+
+#kolorowe {
+    width:100vh;
+    animation: anima 30s infinite alternate;
+    transition:2s;
+    perspective: 500px;
+    transform-style: preserve-3d;
+}
+
+@keyframes anima {
+    0% { transform: rotate3d(1, 1, 1, 0deg);
+        -webkit-transform: rotate3d(1, 1, 1, 0deg);
+        -ms-transform: rotate3d(1, 1, 1, 0deg);
+        -o-transform: rotate3d(1, 1, 1, 0deg); }
+    50% { transform: rotate3d(4, 2, 0, 69deg); 
+        -webkit-transform: rotate3d(4, 2, 0, 69deg);
+        -ms-transform: rotate3d(4, 2, 0, 69deg);
+        -o-transform: rotate3d(4, 2, 0, 69deg);}
+    100% { transform: rotate3d(2, 1, 6, 44deg); 
+            -webkit-transform: rotate3d(2, 1, 6, 44deg);
+            -ms-transform: rotate3d(2, 1, 6, 44deg);
+            -o-transform: rotate3d(2, 1, 6, 44deg);}
+}
